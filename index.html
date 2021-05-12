@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+</head>
+<body>
+  <nav id="nav-wrapper">
+    <h1 id="nav-header">Coffee House</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Test Menu</a>
+        <ul>
+          <li><a href="#">Sub Menu 1</a></li>
+          <li><a href="#">Sub Menu 2</a></li>
+          <li><a href="#">Sub Menu 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Gift Cards</a></li>
+      <li><a href="#">Find Us</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="site-container">
+    <section id="landing-page">
+
+      <div id="coffeeIMGcontainer" ></div>
+
+      <span id="landing-desc" >Come enjoy a cup or two...</span>
+      
+      <span id="landing-list" >Colorado's Local Coffee House  •  Free Wi-fi  •  Great Coffee  •  Open Early  •  Open Late  •  Locally Sourced  •  Trying to be the best</span>
+
+      <span id="landing-info">COVID-19 Update (12/19/2020): We are open for Pickup, To-Go, and Delivery</span>
+    </section>
+
+    <section id="menu-page">
+
+      <h1>Menu</h1>
+
+      <span class="menu-header">Espresso Drinks</span>
+      <span class="menu-header-desc">Available in 12oz, 16oz, and 20oz  •  Iced or Hot</span>
+        <span class="menu-title">Americano</span>
+        <span class="menu-desc">espresso and hot water</span>
+        <span class="menu-title">Latte</span>
+        <span class="menu-desc">espresso and hot water</span>
+        <span class="menu-title">Mocha</span>
+        <span class="menu-desc">espresso, steamed milk, dark chocolate</span>
+
+
+      <span class="menu-header">Brewed Coffee Drinks</span>
+      <span class="menu-header-desc">Available in 12oz, 16oz, and 20oz  •  Iced or Hot</span>
+        <span class="menu-title">Brew of the Day</span>
+        <span class="menu-desc">caffeine or decaffeine</span>
+        <span class="menu-title">Bottomless Coffee</span>
+        <span class="menu-desc">caffeine or decaffeine</span>
+        <span class="menu-title">French Press</span>
+        <span class="menu-desc">water, coffee</span>
+        <span class="menu-title">Cold Brew</span>
+        <span class="menu-desc">water, coffee, 24 hours</span>
+
+
+        <span class="menu-header">Non Coffee</span>
+        <span class="menu-header-desc">Available in 12oz, 16oz, and 20oz  •  Iced or Hot</span>
+          <span class="menu-title">Hot Chocolate</span>
+          <span class="menu-desc"></span>
+          <span class="menu-title">Hot Tea</span>
+          <span class="menu-desc"></span>
+          <span class="menu-title">Chai Latte</span>
+          <span class="menu-desc"></span>
+
+    </section>
+
+    <div class="map-container">
+      <div id="mapid"></div>
+    </div>
+  </div>
+
+  <!--Scripts-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
