@@ -10,6 +10,7 @@ body{
   max-width: 1000px;
   width: auto;
   margin: 0 auto;
+  padding: 0 20px;
 }
 /*Nav Bar*/
 #nav-wrapper{
@@ -35,11 +36,11 @@ body{
 	color:#888;
 	text-decoration:none;
 	font-weight:700;
-	font-size:12px;
+	font-size:14px;
 	line-height:32px;
 }
 #nav-wrapper ul li{
-	margin: 20px;
+	margin: 10px;
 	padding:0px;
 }
 #nav-wrapper ul a:hover{
@@ -75,14 +76,10 @@ body{
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
-  margin: 0px 20px;
 }
-#menu-page{
+#menu-container{
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 #coffeeIMGcontainer{
   display: flex;
@@ -111,27 +108,30 @@ body{
   font-size: 21px;
   font-weight: bold;
   text-align: left;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 /*Menu*/
+#menu-title-header{
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+}
 .menu-header{
   display: inline-block;
-  font-weight: bolder;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-weight: 800;
+  margin-top: 10px;
   font-size: 22px;
 }
 .menu-header-desc{
   display: inline-block;
   font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 .menu-title{
   display: inline-block;
   font-weight: bold;
-  margin-bottom: 5px;
   font-size: 16px;
   letter-spacing: 0.2px;
 }
@@ -139,20 +139,45 @@ body{
   display: inline-block;
   font-weight: lighter;
   margin-bottom: 10px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 }
 
 
-
-
-#mapid { height: 400px; width:100%; }
-.map-container{
+/* Map */
+#mapid { height: 300px; width:100%; }
+#map-container{
   display: flex;
-  height: 400px;
+  height: 300px;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
+/* Find Us */
+#find-us-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+}
+.social-icon{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: 0.3s ease-out;
+}
+.social-icon:hover{
+  transform: scale(1.2);
+}
+#contact-container{
+  line-height: 50%;
+  font-size: 16px;
+}
+#social-icon-container{
+  
+}
+/* Responsiveness */
 @media only screen and (max-width: 700px) {
   #nav-header{padding-top: 10px; align-self: center; justify-content: space-around;}
   #nav-wrapper ul{
@@ -170,5 +195,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  #find-us-container{
+    flex-direction: column;
   }
 }
