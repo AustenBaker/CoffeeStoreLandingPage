@@ -21,11 +21,10 @@ body{
   flex-direction: row;
   justify-content: center;
 }
-#nav-header{
-  display: flex;
-  padding: 0px 30px;
-  margin: 0px;
+#nav-header-img{
+  width: 150px;
   align-self: center;
+  margin: 0px 30px;
 }
 #nav-wrapper ul{
   display: flex;
