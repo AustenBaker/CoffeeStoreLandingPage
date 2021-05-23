@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 body{ 
   padding: 0;
   margin: 0;
@@ -10,7 +14,6 @@ body{
   max-width: 1000px;
   width: auto;
   margin: 0 auto;
-  padding: 0 20px;
 }
 /*Nav Bar*/
 #nav-wrapper{
@@ -75,16 +78,16 @@ body{
 #landing-page{
   display: flex;
   flex-direction: column;
+  margin: 10px 20px;
   word-wrap: break-word;
 }
-#menu-container{
-  display: flex;
-  flex-direction: column;
+h1, h2, #store-image{
+  margin: 0px 0px 20px;
 }
-#coffeeIMGcontainer{
+#image-header{
   display: flex;
   align-self: center;
-  height: 480px;
+  height: 450px;
   width: 100%;
   max-width: 1000px;
   background-image: url('coffeeIMG.jpg');
@@ -95,14 +98,12 @@ body{
   font-size: 34px;
   text-align: center;
   font-weight: bold;
-  margin-top: 20px;
 }
 #landing-list{
   font-size: 21px;
   letter-spacing: 0.5px;
-  font-weight: lighter;
+  font-weight: 300;
   text-align: center;
-  margin-top: 20px;
 }
 #landing-info{
   font-size: 21px;
@@ -112,10 +113,25 @@ body{
 }
 
 /*Menu*/
+#menu-container{
+  margin: 0px 20px;
+}
+#menu-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #menu-title-header{
   text-align: center;
   font-weight: 800;
   font-size: 24px;
+  width: 100%;
+}
+.menu-column{
+  width: 50%;
+  float: left;
+  display: flex;
+    flex-direction: column;
 }
 .menu-header{
   display: inline-block;
@@ -143,13 +159,23 @@ body{
 }
 
 
+#store-image{
+  display: flex;
+  align-self: center;
+  height: 300px;
+  width: 100%;
+  max-width: 1000px;
+  background-image: url('storefront.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
 /* Map */
 #mapid { height: 300px; width:100%; }
 #map-container{
   display: flex;
-  height: 300px;
-  width: 100%;
-  padding-top: 20px;
+  flex-direction: column;
+  margin: 20px 20px;
 }
 
 /* Find Us */
@@ -157,9 +183,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: auto;
-  margin: 20px 0px;
+  margin: 20px 20px;
 }
 .social-icon{
   width: 40px;
@@ -171,12 +196,9 @@ body{
   transform: scale(1.2);
 }
 #contact-container{
-  line-height: 50%;
   font-size: 16px;
 }
-#social-icon-container{
-  
-}
+
 /* Responsiveness */
 @media only screen and (max-width: 700px) {
   #nav-header{padding-top: 10px; align-self: center; justify-content: space-around;}
@@ -188,15 +210,24 @@ body{
   #nav-wrapper ul li{
     margin: 0px;
   }
-  #coffeeIMGcontainer{
-    height: 200px;
+  #image-header{
+    height: 220px;
   }
   #nav-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .menu-column{
+    width: 100%;
+  }
   #find-us-container{
     flex-direction: column;
+  }
+  #map-container{
+    flex-direction: column;
+  }
+  #store-image{
+    height: 200px;
   }
 }
