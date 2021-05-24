@@ -211,6 +211,10 @@ body{
   #nav-wrapper ul li{
     margin: 0px;
   }
+  #nav-header-img{
+    height: 100px;
+    width: 150px;
+  }
   #image-header{
     height: 220px;
   }
