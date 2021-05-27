@@ -3,8 +3,6 @@
   margin: 0;
 }
 body{ 
-  padding: 0;
-  margin: 0;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,26 +13,27 @@ body{
   width: auto;
   margin: 0 auto;
 }
-/*Nav Bar*/
-#nav-wrapper{
+
+
+#nav-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#nav-header-img{
+#nav-logo{
   width: 190px;
   height: 148px;
   align-self: center;
-  margin: 0px 30px;
+  margin: 0px 10px;
 }
-#nav-wrapper ul{
+#nav-container ul{
   display: flex;
   list-style:none;
   justify-content: flex-start;
   align-self: center;
 	padding:0;
 }
-#nav-wrapper ul a{
+#nav-container ul a{
 	display:block;
 	color:#666;
 	text-decoration:none;
@@ -42,38 +41,14 @@ body{
 	font-size:14px;
 	line-height:32px;
 }
-#nav-wrapper ul li{
+#nav-container ul li{
 	margin: 10px;
 	padding:0px;
 }
-#nav-wrapper ul a:hover{
+#nav-container ul a:hover{
   color: #000;
 }
-#nav-wrapper ul ul{
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:#fff;
-	padding:0
-}
-#nav-wrapper ul ul li{
-	float:none;
-	width:200px
-}
-#nav-wrapper ul ul a{
-	line-height:120%;
-	padding:10px 15px;
-  background-color: grey;
-}
-#nav-wrapper ul ul ul{
-	top:0;
-	left:100%
-}
-#nav-wrapper ul li:hover > ul{
-	display:block
-}
-/*Nav Bar*/
+
 
 #landing-page{
   display: flex;
@@ -109,9 +84,8 @@ body{
   margin: 20px 0px;
 }
 
-/*Menu*/
 #menu-container{
-  margin: 0px 20px;
+  padding: 0px 20px;
 }
 #menu-container:after {
   content: "";
@@ -124,14 +98,13 @@ body{
   font-size: 24px;
   width: 100%;
 }
-.menu-content-container{
-  display: flex;
-  flex-direction: column;
-  padding: 5px 15px;
-}
 .menu-column{
   width: 50%;
   float: left;
+}
+.menu-content-container{
+  display: flex;
+  flex-direction: column;
 }
 .menu-header{
   display: inline-block;
@@ -159,6 +132,15 @@ body{
 }
 
 
+#location-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+#mapid { 
+  height: 300px; 
+  width:100%; 
+}
 #store-image{
   display: flex;
   align-self: center;
@@ -171,21 +153,23 @@ body{
   margin: 20px 0px;
 }
 
-/* Map */
-#mapid { height: 300px; width:100%; }
-#map-container{
-  display: flex;
-  flex-direction: column;
-  margin: 20px 20px;
-}
 
-/* Find Us */
+#footer{
+  display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: auto;
+    margin: 0 auto;;
+}
 #find-us-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: auto;
   margin: 20px 20px;
+}
+#contact-container{
+  font-size: 16px;
 }
 .social-icon{
   width: 40px;
@@ -196,9 +180,7 @@ body{
 .social-icon:hover{
   transform: scale(1.2);
 }
-#contact-container{
-  font-size: 16px;
-}
+
 
 /* Responsiveness */
 @media only screen and (max-width: 700px) {
@@ -211,7 +193,7 @@ body{
   #nav-wrapper ul li{
     margin: 0px;
   }
-  #nav-header-img{
+  #nav-logo{
     height: 100px;
     width: 150px;
   }
