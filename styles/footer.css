@@ -1,0 +1,32 @@
+#footer{
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: auto;
+  margin: 0 auto;;
+}
+#find-us-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  margin: 20px 20px;
+}
+#contact-container{
+  font-size: 16px;
+}
+.social-icon{
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: 0.3s ease-out;
+}
+.social-icon:hover{
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 700px) {
+  #find-us-container{
+    flex-direction: column;
+  }
+}

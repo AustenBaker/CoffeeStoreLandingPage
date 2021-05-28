@@ -1,0 +1,29 @@
+#location-container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+#mapid { 
+  height: 300px; 
+  width:100%; 
+}
+#store-image{
+  display: flex;
+  align-self: center;
+  height: 300px;
+  width: 100%;
+  max-width: 1000px;
+  background-image: url('/images/center-street-storefront.jpg');
+  background-position: center center;
+  background-size: cover;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  #map-container{
+    flex-direction: column;
+  }
+  #store-image{
+    height: 200px;
+  }
+}
