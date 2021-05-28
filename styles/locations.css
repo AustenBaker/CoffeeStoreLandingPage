@@ -13,7 +13,7 @@
   height: 300px;
   width: 100%;
   max-width: 1000px;
-  background-image: url('/images/center-street-storefront.jpg');
+  background-image: url('../images/center-street-storefront.jpg');
   background-position: center center;
   background-size: cover;
   margin: 20px 0px;
